@@ -4,15 +4,14 @@ import { BottomNavigation, Text } from 'react-native-paper';
 import Home from './src/pages/Home';
 import Perfil from './src/pages/Perfil';
 import Vacina from './src/pages/Vacina';
-
-
+import Login from './src/pages/Login';
 
 export default function App() {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    { key: 'home', focusedIcon: 'heart', unfocusedIcon: 'heart-outline'},
-    { key: 'vacina', focusedIcon: 'album' },
-    { key: 'perfil', focusedIcon: 'history' },
+    { key: 'home', focusedIcon: 'home', unfocusedIcon: 'heart-outline'},
+    { key: 'vacina', focusedIcon: 'needle' },
+    { key: 'perfil', focusedIcon: 'account' },
   ]);
   
   const renderScene = BottomNavigation.SceneMap({
@@ -21,6 +20,10 @@ export default function App() {
     perfil: Perfil,
   
   });
+
+  /*
+  
+  */
 
   return (
     <SafeAreaProvider>
