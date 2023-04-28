@@ -6,22 +6,12 @@ const styles = StyleSheet.create({
       paddingTop: 50,
       paddingHorizontal: 20
    },
-   titulo: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-   },
-   boxFoto: {
-      width: 40,
-      height: 40,
+   lista: {
+      backgroundColor: '#EBF5FB',
       borderRadius: 20,
-      backgroundColor: '#ccc'
+      paddingVertical: 12,
+      marginVertical: 8,
    },
-   banner: {
-      marginTop: 20,
-      height: 100,
-      borderRadius: 20,
-      backgroundColor: '#ccc'
-   }
 })
 
 export default styles

@@ -9,10 +9,10 @@ export default function Vacina(){
     const ListaVacinas = () => (
         <>
         {vacinas.map(vacina => 
-        <List.Item
+        <List.Item style={styles.lista}
         title={vacina.name}
         description={vacina.date}
-        left={props => <List.Icon {...props} icon="needle" color='lightblue' />}
+        left={props => <List.Icon {...props} icon="needle" color='#4CA2CD' />}
       />
         )
 
